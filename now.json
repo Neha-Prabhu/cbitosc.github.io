@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {"src": "/_site(.*)", "status": 404, "dest": "/_non_existent"},
+    {"src": "/(.*)", "dest": "_site/$1"},
+    {"handle": "filesystem"},
+    {"src": "/(.*)", "status": 404}
+  ]
+}
